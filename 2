@@ -13,15 +13,14 @@ int main()
 		if ((a / ten % 10) == 0) {
 			if (b == false) {continue;}
 			else {
-				if (a >= 0) { std::cout << "+" << a / ten % 10 << "*10^" << i; }
-				else { std::cout << a / ten % 10 << "*10^" << i; }
+				if (a >= 0) { std::cout << "+" ; }
+				std::cout << a / ten % 10 << "*10^" << i;
 			}
 		}
 		else {
 			if ((b == true) and (a>=0)) { std::cout << "+"; }
 			b = true;
-			if (a >= 0) {std::cout << a / ten % 10 << "*10^" << i; }
-			else {std::cout <<a / ten % 10 << "*10^" << i;}
+			std::cout <<a / ten % 10 << "*10^" << i;
 		}
 	}
 	std::cout << std::endl;
